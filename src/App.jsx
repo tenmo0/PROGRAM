@@ -7,10 +7,10 @@ import { useState, useEffect } from "react";
 function Home({ goLogin }) {
   
   const foodImages = [
-    "public/2.png",
-    "public/3.png",
-    "public/4.png",
-    "public/5.png",
+    "/public/2.png",
+    "/public/3.png",
+    "/public/4.png",
+    "/public/5.png",
     
     "public/7.png",
     
@@ -171,7 +171,7 @@ function Navbar({ setPage }) {
           <p>EAT MORE, WORRY LESS</p>
         </div>
 
-        <img src="src/LOGO.png" className="nav-img" />
+        <img src="/src/LOGO.png" className="nav-img" />
       </div>
 
       {open && (
@@ -272,7 +272,7 @@ function Pinggang() {
       <div className="pinggang-box">
         {!showDesc ? (
           <img
-            src="src\Pinggang.png"
+            src="\src\Pinggang.png"
             alt="Pinggang Pinoy Guide"
             onClick={() => setShowDesc(true)}
             style={{ cursor: "pointer" }}
